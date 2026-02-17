@@ -43,3 +43,23 @@ IMAGE_INSTALL += "\
     ${DEVTOOLS} \
     docker \
 "
+
+PIPEWIRE = " \
+    gstreamer1.0-pipewire \
+    libpipewire \
+    lua \
+    pipewire \
+    pipewire-alsa \
+    pipewire-alsa-card-profile \
+    pipewire-dev \
+    pipewire-modules-meta \
+    pipewire-pulse \
+    pipewire-spa-plugins-meta \
+    pipewire-spa-tools \
+    pipewire-tools \
+    speexdsp \
+    wireplumber \
+    wireplumber-dev \
+"
+
+IMAGE_INSTALL:append = " ${PIPEWIRE}"
